@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link rel="stylesheet" type="text/css" href="./css/FinProj.css" />
+    <script
+       src="https://code.jquery.com/jquery-3.1.0.min.js"
+       integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+       crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/FinProj.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+      <h1>Mortgage Calculator</h1>
+      </header>
+
+      <form id="mainform">
+      	
+        <fieldset>
+          <label for="PurchasePrice">Purchase Price ($)</label>
+          <input
+            type="number"
+            name="PurchasePrice"
+            id="PurchasePrice"  
+            min="0"
+            placeholder="Enter Purchase Price"
+            required
+            />
+        </fieldset>
+
+      	<fieldset>
+      		<label for="LoanAmount">Loan Amount ($)</label>
+      		<input 
+      		  type="number"
+            name="LoanAmount" 
+            id="LoanAmount" 
+      		  min="0"
+      		  placeholder="Enter Loan Amount" 
+            required
+            />
+      	</fieldset>
+
+        <fieldset>
+          <label for="AnnualIntRate">Annual Interest Rate (%)</label>
+          <input 
+            type="number" 
+            name="AnnualIntRate"
+            id="AnnualIntRate"
+            min="0"
+            step="any"
+            placeholder="Enter Interest Rate"
+            required
+            />
+        </fieldset>
+
+        <fieldset>
+          <label for="LoanTerm">Loan Term (Years)</label>
+          <input 
+            type="number"
+            name="LoanTerm"
+            id="LoanTerm"
+            min="1"
+            placeholder="Enter Loan Term"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="PaymentFrequency">Payment Frequency</label>
+          <select id="PaymentFrequency" name="PaymentFrequency" required> 
+            <option value="12" selected>Monthly</option>
+            <option value="26">Bi-Weekly</option>
+          </select>
+        </fieldset>
+
+        <!--
+        <fieldset>
+          <label for="AnnualPropertyTax">Annual Property Tax ($)</label>
+          <input 
+            type="number" 
+            name="AnnualPropertyTax"
+            id="AnnualPropertyTax" 
+            min="0" 
+            placeholder="Enter Annual Property Tax" 
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="PMI">PMI (Pvt Mortgage Ins (%))</label>
+          <input 
+            type="number" 
+            name="PMI"
+            id="PMI"
+            min="0"
+            placeholder="Enter PMI"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="HomeInsurance">Home Insurance ($/Yr):</label>
+          <input 
+            type="number" 
+            name="HomeInsurance"
+            id="HomeInsurance"
+            min="0"
+            placeholder="Enter Home Insurance"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <label for="MonthlyHOD">Monthly HOD ($)</label>
+          <input 
+            type="number" 
+            name="MonthlyHOD"
+            id="MonthlyHOD"
+            min="0"
+            placeholder="Enter Monthly HOD"
+            />
+        </fieldset>
+
+        <fieldset>
+          <label for="MonthlyP_I">Monthly Principal &amp; Interest</label>
+          <inputM 
+            type="number" 
+            name="MonthlyP_I"
+            id="MonthlyP_I"
+            placeholder="MonthlyP_I"
+            />
+
+          <label for="PropertyTaxes">Property Taxes</label>
+          <inputM 
+            type="number" 
+            name="PropertyTaxes"
+            id="PropertyTaxes"
+            placeholder="PropertyTaxes"
+            />
+
+          <label for="HomeownersIns">Homeowner's Insurance</label>
+          <inputM 
+            type="number" 
+            name="HomeownersIns"
+            id="HomeownersIns"
+            placeholder="HomeownersIns"
+            />
+
+          <label for="PvtMI">Private Mortgage Insurance</label>
+          <inputM
+            type="number" 
+            name="PvtMI"
+            id="PvtMI"
+            placeholder="PvtMI"
+            />
+
+          <label for="HomeownersDues">Homeowner's Dues</label>
+          <inputM
+            type="number"
+            name="HomeownersDues"
+            id="HomeownersDues"
+            placeholder="HomeownersDues"
+            />
+        -->
+
+        <fieldset>
+          <label for="TotalPayment">Total Monthly Payment (PITI)</label>
+          <input 
+            type="number" 
+            name="TotalPayment"
+            id="TotalPayment"
+            placeholder="Total Monthly Payment"
+            readonly
+            />
+        </fieldset>
+
+        <fieldset>
+          <input 
+              type="submit"
+              value="Calculate"
+            />
+        </fieldset>
+
+      </form>
+    </main>
+  </body>
+</html>
+   
